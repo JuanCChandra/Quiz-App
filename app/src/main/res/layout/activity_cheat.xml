@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cheatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheatActivity">
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Question 1 of 8"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:background="#800080"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/cheatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_confirmation_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/questionNumberTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/showAnswerButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_show_answer_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/cheatTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_back_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/showAnswerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

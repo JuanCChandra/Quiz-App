@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Question 1 of 8"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:background="#800080"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/questionNumberTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/trueButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_true_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/falseButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_false_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/falseButton"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/prevButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_previous_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/falseButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/cheatButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cheat_button_text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
