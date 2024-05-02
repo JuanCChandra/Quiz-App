@@ -1,0 +1,1 @@
+This Android application is built using the Kotlin language. The quiz app consists of 8 questions with true or false answer choices, accompanied by a cheat feature to view the answers, which can be used a maximum of 2 times per quiz session.
